@@ -1,18 +1,27 @@
 /**
- * UC3 - Full OOPS Banner using String.join(" ", ...)
- 
+ * UC4 - Full OOPS Banner
+ * Hint:
+ * 1. Define and populate a String array with each line of the banner using
+ *    String.join() method to join the parts of each line with spaces.
+ * 2. Use a for-each loop to iterate through the array and print each line
  */
-public class stepoops{
+public class uc5 {
     public static void main(String[] args) {
 
-        // Hint: Use String.join(" ", ...) to join the parts of each line with spaces.
-        System.out.println(String.join("   ", "   ***  ", "   ***  ", "  *****  ", "  ***** "));
-        System.out.println(String.join("   ", " **   **", " **   **", " **   **", " **     "));
-        System.out.println(String.join("   ", "**     **", "**     **", "**   **", "**      "));
-        System.out.println(String.join("   ", "**     **", "**     **", "*****   ", " *****  "));
-        System.out.println(String.join("   ", "**     **", "**     **", "**      ", "      **"));
-        System.out.println(String.join("   ", " **   ** ", " **   ** ", "**      ", " **   **"));
-        System.out.println(String.join("   ", "  ***    ", "  ***    ", "**      ", "   ***   "));
+        // Define and populate the array at declaration
+        String[] lines = {
+            String.join("   ", "   ***  ", "   ***  ", "  *****  ", "  *****  "),
+            String.join("   ", " **   **", " **   **", "  **   **", " **    "),
+            String.join("   ", "**     **", "**     **", "**    **", "**     "),
+            String.join("   ", "**     **", "**     **", "*****   ", " ***** "),
+            String.join("   ", "**     **", "**     **", "**      ", "      **"),
+            String.join("   ", " **   ** ", " **   ** ", "**      ", " **   **"),
+            String.join("   ", "  ***    ", "  ***    ", "**      ", "  ***  ")
+        };
 
+        // Use a for-each loop to iterate through the array and print each line
+        for (String line : lines) {
+            System.out.println(line);
+        }
     }
 }
